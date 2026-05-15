@@ -15,3 +15,27 @@ variable "common_tags" {
     Owner       = "sabrine-devops"
   }
 }
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t2.micro"   # free tier
+}
+
+variable "ssh_public_key_path" {
+  description = "Path to your SSH public key"
+  type        = string
+  default     = "~/.ssh/cloudticket.pub"
+}
+
+variable "instance_type" {
+  description = "EC2 instance type"
+  type        = string
+  default     = "t2.micro"   # free tier
+}
+
+variable "ssh_public_key_path" {
+  description = "Path to your SSH public key"
+  type        = string
+  default     = "~/.ssh/cloudticket.pub"
+}
